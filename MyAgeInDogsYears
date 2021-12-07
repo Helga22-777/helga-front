@@ -1,0 +1,8 @@
+const myAge = 39; //ввести возраст человека
+let earlyYears = 2; // первые годы собаки сответствуют 10,5 человеческих лет
+earlyYears *= 10.5;
+let laterYears = myAge - earlyYears; //Отнять первые 2 года
+laterYears *= 4; //после двух лет у собаки идет год за четыре
+let myAgeInDogYears = earlyYears + laterYears; //сложить вместе первые 2 и оставшиеся годы возраста человека
+const myName = 'Olga';
+console.log(`My name is ${myName}. I am ${myAge} years old in human years which is ${myAgeInDogYears} years old in dog years.`)
