@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+window.onload = function () {
+    let f = function(id) {return document.getElementById(id)};
+    let video = f('video');
+    let seconds;
+    let videoId = f('v1');
+
+    f('rewaindBack').onclick = () => video.currentTime -=1;
+    f('rewaindForward').onclick = () => video.currentTime +=1;
+
+  
+    f('playButton').onclick = function (e) {
+        if (video.paused) {
+            video.play();
+            e.target.src = 'ico/video-control-pause_icon-icons.com_48386.ico';
+            setInterval(()=> {
+            seconds = Math.round(video.currentTime);
+            f('out').innerHTML = `${seconds}s of ${Math.round(video.duration)}s`;
+            localStorage.setItem(video, seconds)  
+            }, 1000);
+            video.currentTime = localStorage.getItem(video);
+        }
+        else {
+            video.pause();
+            e.target.src = 'ico/1486485577-314arrow-film-movie-play-player-start-video_81195.svg';
+        };
+    }
+    
+    f('stopButton').onclick = function (e) {
+        video.pause();
+        video.currentTime = 0;
+        f('playButton').src = 'ico/1486485577-314arrow-film-movie-play-player-start-video_81195.svg';
+    };
+
+
+    function videoChangeVolume() { 
+        let volume = volumeScale.value / 100;
+        video.volume = volume;
+        if(video.volume == 0) {
+        muteButton.setAttribute('class','video-mute mute_true');
+        } else {
+        muteButton.setAttribute('class','video-mute mute_false');
+        }
+    }
+
+    let volumeScale = f("video-volume");
+    let muteButton = f("video-mute");
+    function videoMute() { 
+            if(video.volume == 0) {
+            video.volume = volumeScale.value / 100;
+            muteButton.setAttribute('class','video-mute mute_false');
+            } else {
+            video.volume = 0;
+            muteButton.setAttribute('class','video-mute mute_true');
+            }
+        }
+    muteButton.addEventListener('click',videoMute);
+    volumeScale.addEventListener('change',videoChangeVolume);
+
+    f('btn1').addEventListener('click', function () {
+        let nextVideo = 'video/Как-выглядит-безмятежность.webm'
+        video.src = nextVideo;
+    })
+
+    f('btn2').addEventListener('click', function () {
+        let nextVideo = 'video/Страшно красивые волны.mp4'
+        video.src = nextVideo;
+    })
+
+    f('btn').addEventListener('click', function () {
+        let nextVideo = 'video/Двойной релакс.mp4'
+        video.src = nextVideo;
+    })
+}
+</script>
+<style>
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #video {
+        top: 100px;
+        left: 320px;
+        width: 600px;
+        height: 350px;
+        border: 2px solid green;
+    }
+    .video-track {
+    height: 5px;
+    width: 600px;
+    background-color: #b6b6b6;
+    }
+
+    img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    float: left;
+    margin-left: 5px;
+    }
+
+    img:hover {
+     transform: scale(1.2);
+    }
+
+    .controls {
+         padding-top: 5px;
+         width: 600px;
+         height: 50px;
+         border: 2px solid green;
+         display: flex;
+         justify-content: space-around;
+     }
+
+     .video-mute {
+        width: 25px;
+        height: 25px;
+        margin-top: 10px;  
+    }
+
+    .mute_true {
+    background:#c00;
+    }
+
+    .mute_false {
+    background:#ccc;
+    }
+
+    #out {
+        margin-top: 15px;
+        font-weight: 700;
+    }
+
+    button {
+        width: 150px;
+        height: 50px;
+        background-color: green;
+    }
+</style>
+<body>
+    <div class="wrap">
+        <video id="video">
+            <source id="videoId" src="video/Двойной релакс.mp4">
+            <source id="videoId" src="video/Двойной-релакс.webm">
+            <source id="videoId" src="video/Двойной релакс.3gp">
+
+            <source id="videoId2" src="video/Как выглядит безмятежность.mp4">
+            <source id="videoId2" src="video/Как-выглядит-безмятежность.webm">
+            <source id="videoId2" src="video/Как выглядит безмятежность.3gp">
+
+            <source id="videoId3" src="video/Страшно красивые волны.mp4">
+            <source id="videoId3" src="video/Страшно-красивые-волны.webm">
+            <source id="videoId3" src="video/Страшно красивые волны.3gp">
+        </video>
+    
+        <div class="controls">
+            
+            <div>
+                <img id="playButton" src="ico/1486485577-314arrow-film-movie-play-player-start-video_81195.svg">
+            </div>
+            <div>
+                <img id="rewaindBack" src="ico/icons8-prev.png">
+            </div>
+            <div>
+                <img id="rewaindForward" src="ico/icons8-next.png">
+            </div>
+            <div>
+                <img id="stopButton" src="ico/squareinsideacircle_120602.svg">
+            </div>
+
+            <div class='video-mute mute_false' id='video-mute'></div>
+
+            <input type='range' value='100' max='100' title='Громкость' class='video-volume' id='video-volume'>
+
+            <div id="out"></div>
+    
+       </div>
+       <div class="vid">
+           
+           <button id="btn1">Relax</button>
+           <button id="btn2">Relax2</button>
+           <button id="btn">Cats</button>
+
+       </div>
+    </div>
+    
+</body>
+</html>
