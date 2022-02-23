@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+    </style>
+<body>
+    <header class="header">
+        <div class="head">
+            <div class="logo">
+                <img id="logo" src="./ico/logo.png" alt="">
+            </div>
+                <nav class="small-nav">
+                    <ul>
+                        <li><a href="#">Отели</a></li>
+                        <li><a href="#">Авиабилеты</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Горящие туры</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+        </div>
+        <div class="main-head">
+            <h1>Туры и путевки от всех туроператоров</h1>
+        </div>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li>
+                <label for="country">Куда едем?</label>
+                <select name="country" id="country">
+                <option value="ШриЛнака">Шри Ланка</option>
+                <option value="Турция">Турция</option>
+                <option value="Шриланка">Египет</option>
+                <option value="Мальдивы">Мальдивы</option>
+                <option value="Таиланд">Таиланд</option>
+            </select>
+        </li>
+        <li><label for="number">На сколько дней?</label>
+            <select name="number" id="number">
+                <option value="day">1</option>
+                <option value="day">2</option>
+                <option value="day">3</option>
+                <option value="day">4</option>
+                <option value="day">5</option>
+                </select>
+        </li>
+        
+        <li>
+            <label for="month">В каком месяце?</label>
+            <select name="month" id="month">
+                <option value="day">Январь</option>
+                <option value="day">Февраль</option>
+                <option value="day">Май</option>
+                <option value="day">Июнь</option>
+                <option value="day">Июль</option>
+                <option value="day">Август</option>
+                </select>
+        </li>
+        <li>
+            <label for="count">Сколько человек?</label>
+            <select name="count" id="count">
+                <option value="day">1</option>
+                <option value="day">2</option>
+                <option value="day">3</option>
+                <option value="day">4</option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+    <section class="section">
+        <div id="hotel1" class="top-hotel">
+            <h3>Отель Cinnamon Bey 5*</h3>
+            <div class="gallery">
+                <div class="item1">
+                    <img class="hotel-img" src="./img/hotel1.jpg" alt="">
+                </div>
+                <div class="item2">
+                    <img class="hotel-img" src="./img/hotel1.2" alt="">
+                </div>
+                <div class="item3">
+                    <img class="hotel-img" src="./img/hotel1.3" alt="">
+                </div>
+                <div class="item4">
+                    <img class="hotel-img" src="./img/hotel1.4.jpg" alt="">
+                </div>
+                <div class="item5">
+                    <img class="hotel-img" src="./img/hotel1.5.jpg" alt="">
+                </div>
+                <div class="item6">
+                    <img class="hotel-img" src="./img/hotel1.6.jpg" alt="">
+                </div>
+            </div>
+            <div class="text-hotel">
+                <h4>Информация об отеле</h4>
+                <p>Комфортабельные номера с интерьером в турецком стиле, хороший сервис, большая ухоженная территория создают отличные условия для отдыха. В отеле действует концепция питания “Dine Around” – оплаченное питание предоставляется на выбор.</p>
+            <div class="wrap-room">
+            <h4>Виды номеров</h4>
+            <div class="room-box1">
+                <img class="room" src="./ico/free-icon-hotel-bed-5260967.png" alt="ico">
+                <p>Superior Room (39 м2, макс. 3 или 2+2 чел.).  Расположены в левом крыле здания, с видом на сад и океан. Ванная комната с душем.</p>
+            </div>
+            <div class="room-box2">
+                <img class="room" src="./ico/exclusive.png" alt="ico">
+                <p>Deluxe Room (49 м2, макс. 3 или 2+2 чел.). Расположены в отдельном крыле здания (Deluxe Wing), ванная комната с ванной. Гости данной категории могут пользоваться отдельным бассейном, находящимся на территории Deluxe Wing.</p>
+            </div>
+            <div class="room-box3">
+                <img class="room" src="./ico/premium-icon-vip-card-4666050.png" alt="ico">
+                <p>Suite (134 м2, макс. 3 или 2+2 чел.). Расположены на верхнем этаже в крыле Deluxe Wing. Зоны столовой и гостиной, ванная комната с ванной, собственный бассейн с видом на океан. Гости данной категории могут пользоваться отдельным бассейном, находящимся на территории Deluxe Wing.</p>
+            </div>
+        </div>
+        <ul class="hotel-serv">
+            <li class="first"><img class="hotel-ico" src="./ico/premium-icon-beach-bar-928064.png" alt="sea"> Тип отеля: Пляжный</li>
+            <li class="second"><img class="hotel-ico" src="./ico/free-icon-wave-866448.png" alt="sea"> Расположение: 1 линия (на берегу моря)</li>
+            <li class="third"><img class="hotel-ico" src="./ico/free-icon-beach-1397792.png" alt="sea"> Пляж: Песчаный, Муниципальный, Песок</li>
+            <iframe id="src1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.5464249490615!2d79.9768792147703!3d6.452224695332105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae22e469cc36425%3A0xc56e7d644e11720b!2sCinnamon%20Bey%20Beruwala!5e0!3m2!1suk!2sua!4v1643723100896!5m2!1suk!2sua" width="400" height="400" allowfullscreen="" loading="lazy" style="border: 5px solid  rgb(24, 214, 214)"></iframe>
+        </ul>
+        <button id="map1">Show map</button>
+        </div>
+    </div>
+        <div id="hotel2" class="top-hotel">
+            <h3>Citrus Waskaduwa, 5* </h3>
+            <div class="gallery">
+                <div class="item1">
+                    <img class="hotel-img" src="./img/hot2.jpg" alt="">
+                </div>
+                <div class="item2">
+                    <img class="hotel-img" src="./img/hot2.2" alt="">
+                </div>
+                <div class="item3">
+                    <img class="hotel-img" src="./img/hot2.3" alt="">
+                </div>
+                <div class="item4">
+                    <img class="hotel-img" src="./img/hot2.4.jpg" alt="">
+                </div>
+                <div class="item5">
+                    <img class="hotel-img" src="./img/hot2.5.jpg" alt="">
+                </div>
+                <div class="item6">
+                    <img class="hotel-img" src="./img/hot2.6.jpg" alt="">
+                </div>
+            </div>
+            <div class="text-hotel">
+                <h4>Информация об отеле</h4>
+                <p>Отель Citrus Waskaduwa 5* расположен непосредственно на пляже в городе Калутара. К услугам гостей рестораны, открытый бассейн, спа-салон и фитнес-центр. В зонах общественного пользования бесплатный Wi-Fi. Современные номера оснащены телевизором, сейфом, телефоном.</p>
+            <div class="wrap-room">
+                <h4>Виды номеров</h4>
+                <div class="room-box1">
+                    <img class="room" src="./ico/free-icon-hotel-bed-5260967.png" alt="ico">
+                    <p>Superior Room (43м2, спальня, ванная комната, макс. 3 чел.)</p>
+                </div>
+                    <div class="room-box2">
+                        <img class="room" src="./ico/exclusive.png" alt="ico">
+                        <p>Deluxe Room (135 м2, спальня, ванная комната, мини-кухня с обеденной зоной, балкон, макс. 3 чел.) – второй этаж</p>
+                    </div>
+            <div class="room-box3">
+                <img class="room" src="./ico/premium-icon-vip-card-4666050.png" alt="ico">
+                <p>Suite (360 м2, спальня, гостиная с обеденной зоной, мини-кухня с барной зоной, ванная комната с джакузи, просторный балкон, макс. 3 чел.) – третий этаж</p>
+            </div>
+    </div>
+    <ul class="hotel-serv">
+        <li class="first"><img class="hotel-ico" src="./ico/premium-icon-beach-bar-928064.png" alt="sea"> Тип отеля: Пляжный</li>
+        <li class="second"><img class="hotel-ico" src="./ico/free-icon-wave-866448.png" alt="sea"> Расположение: 1 линия (на берегу моря)</li>
+        <li class="third"><img class="hotel-ico" src="./ico/free-icon-beach-1397792.png" alt="sea"> Пляж: Песчаный, Муниципальный, Песок</li>
+        <iframe id="src2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.1775815452565!2d79.93979481477123!3d6.624851595209407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae237e2064eac69%3A0xf284eb0ce1818b2!2sCitrus%20Waskaduwa!5e0!3m2!1suk!2sua!4v1643727956548!5m2!1suk!2sua"  width="400" height="400" allowfullscreen="" loading="lazy" style="border: 5px solid  rgb(24, 214, 214)"></iframe>
+    </ul>
+    
+    <button id="map2">Show map</button>
+        </div>
+        
+        </div>
+        <div id="hotel3" class="top-hotel">
+            <h3>Отель Avani Bentota (ex. Serendib) 4*</h3>
+            <div class="gallery">
+                <div class="item1">
+                    <img class="hotel-img" src="./img/hot3.1" alt="">
+                </div>
+                <div class="item2">
+                    <img class="hotel-img" src="./img/hot3.2" alt="">
+                </div>
+                <div class="item3">
+                    <img class="hotel-img" src="./img/hot3.3" alt="">
+                </div>
+                <div class="item4">
+                    <img class="hotel-img" src="./img/hot3.4.jpg" alt="">
+                </div>
+                <div class="item5">
+                    <img class="hotel-img" src="./img/hot3.5.jpg" alt="">
+                </div>
+                <div class="item6">
+                    <img class="hotel-img" src="./img/hot3.6.jpg" alt="">
+                </div>
+            </div>
+            <div class="text-hotel">
+                <h4>Информация об отеле</h4>
+                <p>Avani Bentota Hotel — это очаровательный отель, где номера оборудованы ТВ с плоским экраном, кондиционером и мини-баром и где можно постоянно быть на связи благодаря бесплатному Wi-Fi.
+                    Отель предлагает обслуживание в номер и услуги консьержа. Кроме того, гости могут воспользоваться бассейном и завтраком, что сделало это место популярным среди путешественников, приехавших в Бентоту. Гостям с автомобилем предоставляется бесплатная парковка.
+                </p>
+<div class="wrap-room">
+    <h4>Виды номеров</h4>
+    <div class="room-box1">
+        <img class="room" src="./ico/free-icon-hotel-bed-5260967.png" alt="ico">
+        <p>Superior Room. 60 стандартных комнат с отдельным санузлом, оборудованным душевой кабиной. Во всех номерах есть кондиционер, вентилятор под потолком, кофеварка со всеми принадлежностями для приготовления чая или кофе, платный мини-бар, телефон и возможность пользоваться бесплатным Wi-Fi. Также есть телевизор со спутниковым телевидением. </p>
+    </div>
+    <div class="room-box2">
+        <img class="room" src="./ico/exclusive.png" alt="ico">
+        <p>Deluxe Room 14 люксов отличаются от стандартного размещения большей площадью комнаты и наличием большой ванны.</p>
+    </div>
+    <div class="room-box3">
+        <img class="room" src="./ico/premium-icon-vip-card-4666050.png" alt="ico">
+        <p>Suite (360 м2, спальня, гостиная с обеденной зоной, мини-кухня с барной зоной, ванная комната с джакузи, просторный балкон, макс. 3 чел.) – третий этаж</p>
+    </div>
+</div>
+    <ul class="hotel-serv">
+        <li class="first"><img class="hotel-ico" src="./ico/premium-icon-beach-bar-928064.png" alt="sea"> Тип отеля: Пляжный</li>
+        <li class="second"><img class="hotel-ico" src="./ico/free-icon-wave-866448.png" alt="sea"> Расположение: 1 линия (на берегу моря)</li>
+        <li class="third"><img class="hotel-ico" src="./ico/free-icon-beach-1397792.png" alt="sea"> Пляж: Песчаный, Песок</li>
+        <iframe id="src3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7719359809666!2d79.99408331477015!3d6.423341995352638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae22bcfc721dd61%3A0xd830838f60db08e4!2sAvani%20Bentota%20Resort!5e0!3m2!1suk!2sua!4v1643731364247!5m2!1suk!2sua" width="400" height="400" allowfullscreen="" loading="lazy" style="border: 5px solid  rgb(24, 214, 214)"></iframe>
+    </ul>
+    <button id="map3">Show map</button>
+        </div>
+        </div>
+        <div id="hotel4" class="top-hotel">
+            <h3>Taprobana Wadduwa 5*</h3>
+            <div class="gallery">
+                <div class="item1">
+                    <img class="hotel-img" src="./img/hot4.1" alt="">
+                </div>
+                <div class="item2">
+                    <img class="hotel-img" src="./img/hot4.2" alt="">
+                </div>
+                <div class="item3">
+                    <img class="hotel-img" src="./img/hot4.3" alt="">
+                </div>
+                <div class="item4">
+                    <img class="hotel-img" src="./img/hot4.4.jfif" alt="">
+                </div>
+                <div class="item5">
+                    <img class="hotel-img" src="./img/hot4.5.jpg" alt="">
+                </div>
+                <div class="item6">
+                    <img class="hotel-img" src="./img/hot4.6.jfif" alt="">
+                </div>
+            </div>
+            <div class="text-hotel">
+                <h4>Информация об отеле</h4>
+                <p>Ваддува – это довольно посещаемый курорт, который расположен на южном побережье острова Шри-Ланка. Это по размеру небольшой городок, который славится прекрасными пляжами, протянувшихся на семь километров.
+                    Отель Taprobana Wadduwa находится на берегу океана в небольшом городке Ваддува, до центра города 15 минут пешком. Сам отель спокойный, но находится в оживленном городке. Рекомендуем для респектабельного умиротворенного отдыха.
+                    Отель открылся осенью 2014 года.</p>
+            <div class="wrap-room">
+        <h4>Виды номеров</h4>
+        <div class="room-box1">
+            <img class="room" src="./ico/free-icon-hotel-bed-5260967.png" alt="ico">
+            <p>Superior Room. 60 стандартных комнат с отдельным санузлом, оборудованным душевой кабиной. Во всех номерах есть кондиционер, вентилятор под потолком, кофеварка со всеми принадлежностями для приготовления чая или кофе, платный мини-бар, телефон и возможность пользоваться бесплатным Wi-Fi. Также есть телевизор со спутниковым телевидением. </p>
+            </div>
+            <div class="room-box2">
+                <img class="room" src="./ico/exclusive.png" alt="ico">
+                <p>Deluxe Room 14 люксов отличаются от стандартного размещения большей площадью комнаты и наличием большой ванны.</p>
+            </div>
+            <div class="room-box3">
+                <img class="room" src="./ico/premium-icon-vip-card-4666050.png" alt="ico">
+                <p>Suite (360 м2, спальня, гостиная с обеденной зоной, мини-кухня с барной зоной, ванная комната с джакузи, просторный балкон, макс. 3 чел.) – третий этаж</p>
+            </div>
+        </div>
+            <ul class="hotel-serv">
+                <li class="first"><img class="hotel-ico" src="./ico/premium-icon-beach-bar-928064.png" alt="sea"> Тип отеля: Пляжный</li>
+                <li class="second"><img class="hotel-ico" src="./ico/free-icon-wave-866448.png" alt="sea"> Расположение: 1 линия (на берегу моря)</li>
+                <li class="third"><img class="hotel-ico" src="./ico/free-icon-beach-1397792.png" alt="sea"> Пляж: Песчаный, Собственный, Песок</li>
+                <iframe id="src4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7719359809666!2d79.99408331477015!3d6.423341995352638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae22bcfc721dd61%3A0xd830838f60db08e4!2sAvani%20Bentota%20Resort!5e0!3m2!1suk!2sua!4v1643731502173!5m2!1suk!2sua" width="400" height="400" allowfullscreen="" loading="lazy" style="border: 5px solid  rgb(24, 214, 214)" ></iframe>
+            </ul>
+        <button id="map4">Show map</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <h2>Go Turne!</h2>
+        <p>Have a good travelling!</p>
+        <div class="foot-img">
+            <img src="./ico/fb_icon-icons.com_66689.svg" alt="ico">
+            <img src="./ico/linked_icon-icons.com_66685.svg" alt="ico">
+            <img src="./ico/telegram_icon-icons.com_66668.svg" alt="ico">
+            <img src="./ico/twitter_icon-icons.com_66688.svg" alt="ico">
+        </div>   
+    </footer>
+    <script src="js.js"></script>
+</body>
+</html>
