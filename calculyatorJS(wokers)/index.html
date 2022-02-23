@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Workers</title>
+</head>
+<style>
+   
+   input {
+       width: 200px;
+       height: 25px;
+   }
+   body {
+       background-color: rgb(231, 112, 215);
+       font-size: 28px;
+   }
+
+   .container {
+      background-color: silver;
+   }
+
+</style>
+<body>
+<h1>Calculate</h1>
+
+    <form border="1">
+        <div>
+            <label for="number1">Число 1: </label>
+            <input type="text" id="number1" value="0">
+        </div>
+        <div>
+            <label for="number2">Число 2: </label>
+            <input type="text" id="number2" value="0">
+        </div>
+    </form>
+    <p>Результат: 0</p>
+
+    <div class="all-btns">
+        <button id="plus">+</button>
+        <button id="minus">-</button>
+        <button id="division">/</button>
+        <button id="multipl">*</button>
+    </div>
+    <script>
+
+       window.addEventListener('change', function(){
+        if (window.Worker) {
+
+        let first = document.querySelector('#number1');
+        let second = document.querySelector('#number2');
+        let result = document.querySelector('p');
+
+        let plus = document.querySelector('#plus');
+        let minus = document.querySelector('#minus');
+        let division = document.querySelector('#division');
+        let multipl = document.querySelector('#multipl');
+           
+        plus.onclick = function () {
+            let worker = new Worker("worker/worker1.js")
+                worker.postMessage([first.value, second.value]); 
+                worker.onmessage = function (e) {
+                result.textContent = e.data;
+            };
+        };
+    
+        minus.onclick = function () {
+            let worker = new Worker("worker/worker2.js")
+            worker.postMessage([first.value, second.value]);
+            worker.onmessage = function (e) {
+                result.textContent = e.data;
+            };
+        };
+
+        division.onclick = function () {
+            let worker = new Worker("worker/worker3.js")
+            worker.postMessage([first.value, second.value]);
+            worker.onmessage = function (e) {
+                result.textContent = e.data;
+            };
+        };
+
+        multipl.onclick = function () {
+            let worker = new Worker("worker/worker4.js")
+            worker.postMessage([first.value, second.value]);
+            worker.onmessage = function (e) {
+                result.textContent = e.data;
+            };
+        };
+        }
+        })
+    </script>
+</body>
+</html>
