@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canada</title>
+    <script>
+        window.onload = function () {
+
+            let canvas = document.querySelector('canvas');
+            let context = canvas.getContext('2d');
+            context.strokeStyle="rgba(0,0,0,0.2)";
+
+            context.fillStyle = 'white';
+            context.beginPath();
+            context.moveTo(100, 100);
+            context.bezierCurveTo(200, 130, 400, 70, 500, 100);
+            context.lineTo(500, 300);
+            context.bezierCurveTo(400, 270, 200, 330, 100, 300);
+            context.shadowColor = 'rgba(0, 0, 0, 0.4)';
+            context.shadowBlur = 10;
+            context.shadowOffsetX = 0;
+            context.shadowOffsetY = 2;
+            context.closePath();
+            context.fill();
+           
+            context.stroke();
+
+            context.fillStyle = 'red';
+            context.beginPath();
+            context.moveTo(100, 100);
+            context.bezierCurveTo(121, 104, 139, 107, 200, 108);
+            context.lineTo(200, 308);
+            context.bezierCurveTo(145, 310, 116, 304, 100, 300);
+            context.closePath();
+            context.fill();
+            context.stroke();
+            
+            context.beginPath();
+            context.moveTo(400, 92);
+            context.bezierCurveTo(442, 91, 473, 93, 500, 100);
+            context.lineTo(500, 300);
+            context.bezierCurveTo(468, 293, 443, 290, 402, 291);
+            context.closePath();
+            context.fill();
+            context.stroke();
+
+            context.beginPath();
+            context.moveTo(299, 145);
+            context.lineTo(309, 164);
+            context.lineTo(319, 154);
+            context.lineTo(317, 187);
+            context.lineTo(337, 175);
+            context.lineTo(335, 185);
+            context.lineTo(355, 182);
+            context.lineTo(346, 199);
+            context.lineTo(356, 201);
+            context.lineTo(327, 223);
+            context.lineTo(336, 237);
+            context.lineTo(302, 240);
+            context.lineTo(302, 270);
+            context.lineTo(302, 270);
+            context.lineTo(298, 270);
+            context.lineTo(298, 240);
+            context.lineTo(263, 251);
+            context.lineTo(271, 234);           
+            context.lineTo(237, 225);
+            context.lineTo(245, 217);
+            context.lineTo(228, 200);
+            context.lineTo(248, 197);
+            context.lineTo(245, 188);
+            context.lineTo(277, 193);
+            context.lineTo(276, 155);
+            context.lineTo(288, 163);
+            context.lineTo(299, 144);
+                
+            context.closePath();
+            context.fill();
+            context.stroke();     
+
+    canvas.addEventListener('mouseup', function (e) {
+    let x = e.pageX - e.target.offsetLeft,
+        y = e.pageY - e.target.offsetTop;
+        console.log(x,y);
+    });
+}
+    </script>
+</head>
+<body>
+    <canvas width="600px" height="600px">
+
+    </canvas>
+</body>
+</html>
