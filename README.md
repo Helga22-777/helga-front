@@ -1,8 +1,11 @@
-- 👋 Hi, I’m @Helga22-777
-- 👀 I’m interested in  Frontend
-- 🌱 I’m currently l учусь  на курсах в CiberBionicSistemetics
-- 💞️  здесь есть  небольшие скрипты 
-- 📫 Открытая книга)
+👋 Hi, I’m Olga
+
+👀 And I’m Frontend Developer
+
+This repository contains my pet projects written during my studies and not only
+
+💞️ If you have a job for me, you can write on kononenkoolga375@gmail.com
+
 
 <!---
 Helga22-777/Helga22-777 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
