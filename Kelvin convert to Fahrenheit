@@ -1,8 +1,0 @@
-const kelvin = 293; //Kelvin 
-const celsius =   kelvin - 273; //Celsius
-let fahrenheit = celsius * (9 / 5) + 32; //Fahrenheit
-let newton = celsius * (33 / 100); //шкала Ньютона
-fahrenheit = Math.floor(fahrenheit); // округление значения
-newton = Math.floor(newton);
-console.log(`The temperature is ${fahrenheit} degrees Fahrenheit.`);
-console.log(`The temperature is ${newton} at Newton scale.`);

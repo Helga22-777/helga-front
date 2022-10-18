@@ -1,0 +1,224 @@
+@charset "UTF-8";
+body {
+  background-color: rgb(42, 42, 250);
+  margin: 0 auto;
+  color: #636466;
+  font-family: "Open Sans";
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url(../fonts/Bebas-Regular.ttf);
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway-Light.ttf);
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/open-sans/OpenSans-Regular.ttf);
+}
+.wrap {
+  width: 90%;
+  min-height: 1000px;
+  margin: 0 auto;
+  background-color: rgb(199, 195, 195);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.stick {
+  width: 30%;
+  background-image: url("../img/левый фон.png");
+}
+
+.container {
+  width: 70%;
+  background-image: url("../img/правый фон.png");
+  margin-left: 20px;
+}
+
+.stick, .container {
+  background-size: cover;
+  background-position: center center;
+  border-radius: 25px;
+  text-align: center;
+  padding-bottom: 120px;
+}
+
+.foto {
+  width: 80%;
+  height: 80%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-family: "Bebas Neue";
+  color: #0084c7;
+  font-size: 50px;
+  margin-bottom: 0;
+  letter-spacing: 0.15em;
+  line-height: 60px;
+}
+
+.stick h2 {
+  font-family: "Raleway";
+  margin-top: 0;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+.text {
+  text-align: justify;
+  padding: 0 20px;
+}
+
+.underline {
+  display: flex;
+  justify-content: center;
+}
+
+.line, .line-f {
+  width: 32%;
+  margin: 0;
+  height: 2px;
+}
+
+.rect, .rect-f {
+  width: 23%;
+  height: 3px;
+  margin: 0;
+}
+
+.icon__blocks {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+}
+.icon__blocks .ico {
+  width: 30%;
+  height: 30%;
+  padding: 20px 0 0 0;
+}
+.icon__blocks span {
+  font-size: 10px;
+}
+
+.block__section {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h2 {
+  font-size: 1.2em;
+  text-align: left;
+  margin-left: 30px;
+  color: #414142;
+}
+
+.line-f {
+  width: 85%;
+}
+
+.rect-f {
+  width: 5%;
+}
+
+.job {
+  display: flex;
+  flex-direction: row;
+  margin-left: 55px;
+}
+.job .work__date {
+  width: 25%;
+  text-align: justify;
+  margin: 5px 0 0 15px;
+}
+.job .work__date p {
+  margin-bottom: 25px;
+}
+.job .about {
+  width: 75%;
+  text-align: justify;
+  padding-right: 25px;
+  margin: 0;
+}
+
+.my-skills {
+  width: 75%;
+  float: right;
+  text-align: justify;
+  padding-right: 30px;
+  margin-top: 15px;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 45px;
+  }
+  .job .work__date p {
+    margin-bottom: 23px;
+  }
+}
+@media (max-width: 915px) {
+  h1 {
+    font-size: 30px;
+  }
+  .job .about {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .wrap {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+  .stick, .container {
+    width: 90%;
+    margin-left: 0;
+    padding-bottom: 50px;
+  }
+  .stick {
+    background-position: top left;
+  }
+  .job {
+    margin: 0;
+  }
+  .job .about h4 {
+    margin-bottom: 15px;
+  }
+  .foto {
+    width: 70%;
+    height: 70%;
+  }
+}
+@media (max-width: 320px) {
+  .wrap {
+    width: 100%;
+    padding: 0;
+  }
+  .job .work__date {
+    margin: 0px 0px 0px 15px;
+  }
+  .job .work__date p {
+    font-size: 14px;
+    margin-top: 19px;
+    margin-bottom: 18px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+}
