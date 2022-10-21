@@ -1,0 +1,86 @@
+body {
+    box-sizing: border-box;
+    width: 30%;
+    color: white;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    color: silver;
+    background-color: slategray;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    background-color: black;
+    border-radius: 0 0 5px 5px;
+}
+
+
+.wrap {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+   
+}
+
+.wrap:hover, .city-code:hover {
+    color: yellow;
+    opacity: 0.6;
+    transition: 0.4s;
+    border: 1px solid yellow;
+}
+
+h3 {
+    width: 95px;
+    padding-left: 10px;
+}
+.conditions {
+    width: 130px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.ico-weather {
+    text-align: center;
+}
+
+.temp {
+    cursor: pointer;
+}
+@media (max-width: 1024px){
+   body {
+    width: 40%;
+   }
+}
+@media (max-width: 780px){
+  body {
+   width: 50%;
+  }
+}
+@media (max-width: 580px){
+  body {
+   width: 60%;
+  }
+}
+@media (max-width: 480px){
+  body {
+   width: 75%;
+   padding: 5px;
+  }
+}
+@media (max-width: 320px){
+  body {
+   width: 100%;
+  }
+}
