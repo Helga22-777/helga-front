@@ -1,10 +1,4 @@
-👋 Hi, I’m Olga
-
-👀 And I’m Frontend Developer
-
-💞️ If you have a job for me, you can write on kononenkoolga375@gmail.com
-
-This repository contains my pet projects written during my studies and not only
+👋 Hi!
 
 
 <!---
