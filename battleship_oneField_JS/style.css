@@ -1,0 +1,74 @@
+body {
+  background-color: rgb(8, 148, 106);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(241, 235, 235);
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   gap: 90px;
+   width: 100%;
+   height: 100%;
+  }
+
+ .gameboard-container {
+  width: 394px;
+  height: 400px;
+  background-color: rgb(8, 148, 106);
+  box-shadow: 0px 0px 20px rgba(241, 235, 235, 0.959);
+  display: flex;
+  flex-wrap: wrap;
+} 
+.info {
+  height: 400px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.out,.counter-hits {
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: 25px;
+}
+#start {
+  border: none;
+  padding: 20px 65px;
+  border-radius: 20px;
+  color:  rgb(8, 148, 106);
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+  font-size: 18px;
+} 
+
+.block {
+  border: 1px solid  rgb(241, 235, 235);
+  width: 38px;
+  height: 38px;
+}
+.fall-cell{
+ opacity: 0.5;
+ background-color: rgb(1, 62, 108);
+}
+.boom {
+  background-image: url('./image/free-icon-close-1828665.png');
+  background-size: 33px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color :rgb(241, 235, 235);
+  background-color:  rgb(8, 148, 106);
+  border: 2px solid rgb(241, 235, 235);
+  border-radius: 20px;
+  position: absolute;
+  padding: 20px;
+  margin-right: 300px;
+  z-index: 1;
+}
