@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 20px auto 0;
+    background-color: rgba(31, 31, 83, 0.712);
+    padding: 15px;
+}
+h1 {
+    margin-top: 30px;
+}
+header {
+    font-style: italic;
+    font-weight: 600;
+    font-size: large;
+    margin-top: 50px;
+}
+.form-input{
+    width: 440px;
+    text-align:left;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    box-shadow: 2px 5px 7px rgba(171, 171, 204, 0.6);
+}
+.form-btn:hover  {
+   
+    color: rgba(31, 31, 83, 0.712);
+    text-decoration: underline;
+    cursor: pointer;
+   
+}
+.form-btn {
+    width: 80px;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 0 5px 5px 0;
+    background-color: white;
+    border: none;
+    box-shadow: 2px 4px 4px rgba(171, 171, 204, 0.6);
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 860px;
+    margin: 30px 0 60px;
+}
+
+ul li{
+    justify-items: center;
+    width: 820px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    width: 60%;
+    border: 1px solid gray;
+    padding: 10px;
+    text-decoration: none;
+    position: relative;
+}
+.fa_trash {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+
+}
+.fa_check {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    cursor: pointer;
+
+}
+.todo-item{
+    background-color: white;
+    border: none;
+    box-shadow: 2px 5px 7px rgba(171, 171, 204, 0.6);
+}
+.check {
+    background-color: silver;
+    color: grey;
+    text-decoration: line-through;
+}
