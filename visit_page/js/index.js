@@ -39,33 +39,26 @@ document.querySelectorAll(".dropdown-toggle").forEach(el => {
 })
 
 iconMenu.addEventListener('click', (e) => {
-  console.log('clikc');
+  if(!nav.classList.contains('active-side')) {
     nav.classList.add('active-side');
     iconMenu.style.display = 'none';
     iconMenuOpen.style.display = 'block';
-  
+  }
 })
 
 iconMenuOpen.addEventListener('click', (e) => {
-
-    nav.classList.remove('active-side');
-    iconMenu.style.display = 'block';
-    iconMenuOpen.style.display = 'none';
-
-})
-
-window.onclick = (e) => {
-  const target = e.target;
-  if (!target.closest('.dropdown-toggle') && !target.closest('.menu-icon') && !target.closest('nav')) {
+  if(nav.classList.contains('active-side')) {
     nav.classList.remove('active-side');
     iconMenu.style.display = 'block';
     iconMenuOpen.style.display = 'none';
   }
-};
+})
+
+
 
 window.addEventListener('resize', (e) => {
   const screenSize = window.innerWidth
-
+   
   if(screenSize > 772) {
     nav.classList.remove('active-side');
     iconMenu.style.display = 'none';
@@ -73,5 +66,13 @@ window.addEventListener('resize', (e) => {
   } else {
     iconMenu.style.display = 'block';
     iconMenuOpen.style.display = 'none';
+    window.onclick = (e) => {
+      const target = e.target;
+      if (!target.closest('.dropdown-toggle') && !target.closest('.menu-icon') && !target.closest('nav')) {
+        nav.classList.remove('active-side');
+        iconMenu.style.display = 'block';
+        iconMenuOpen.style.display = 'none';
+      } 
+    };
   }
 })
