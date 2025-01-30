@@ -16,7 +16,7 @@ body {
   }
 
  .gameboard-container {
-  width: 394px;
+  width: 396px;
   height: 400px;
   background-color: rgb(8, 148, 106);
   box-shadow: 0px 0px 20px rgba(241, 235, 235, 0.959);
