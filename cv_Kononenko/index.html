@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olga Kononenko - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        a:hover {
+            color:  #8A2BE2;
+            text-decoration: none;
+        }
+        p {
+          margin: 5px;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background: white;
+            padding: 40px 80px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: grid;
+            grid-template-areas: 
+            "header header"
+             "sidebar content";
+             grid-template-columns: 30% 1fr;
+             gap: 30px;
+        }
+        .header {
+            grid-area: header;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .sidebar {
+          grid-area: sidebar;
+          
+        }
+        main {
+          grid-area: content;
+        }
+        .contacts p {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 8px;
+        }
+        .city {
+          padding-bottom: 15px;
+        }
+        h1, h2, .city {
+            color: #555;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .experience, .projects, .education, .certifications, .languages, .skills {
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 8px;
+        }
+        ul li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 4px;
+            width: 6px;
+            height: 0.5px;
+            border-left: 6px solid #8A2BE2;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+        }
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 10px;
+        }
+        .project {
+            flex: 1 1 45%;
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .contact {
+                text-align: left;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>Olga Kononenko</h1>
+                <h2>Junior Front-End Developer</h2>
+            </div>
+        </div>
+        <hr>
+        <aside class="sidebar">
+          <div class="section contacts">
+            <p class="city"><strong>Kyiv, Ukraine</strong></p>
+            <p><img src="icons/email-svgrepo-com.svg" alt="email"><a href="mailto:kononenkoolga375@gmail.com" target="_blank">kononenkoolga375@gmail.com</a></p>
+            <p><img src="icons/phone-calling-rounded-svgrepo-com.svg" alt="phone"><a href="tel:+380509474815" target="_blank">(050) 947-48-15</a></p>
+            <p><img src="icons/github-svgrepo-com.svg" alt="github"><a href="https://github.com/Helga22-777/helga-front" target="_blank">GitHub</a></p>
+            <p><img src="icons/linkedin-svgrepo-com.svg" alt="linkedIn"><a href="https://www.linkedin.com/in/olga-kononenko-056a5a21b" target="_blank">LinkedIn</a></p>
+            <p> <img src="icons/telegram-svgrepo-com.svg" alt="telegram"><a href="https://t.me/o_konlive" target="_blank">Telegram</a></p>
+        </div>
+          <div class="section skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, Sass</li>
+                <li>JavaScript, TypeScript</li>
+                <li>React, Redux/Redux Toolkit</li>
+                <li>Angular</li>
+                <li>Material UI</li>
+                <li>Flexbox, Grid</li>
+                <li>Git</li>
+                <li>Responsive, Adaptive Design</li>
+            </ul>
+        </div>
+  
+        <div class="section education">
+          <h2>Education</h2>
+          <p><strong>Kherson Economic and Legal Institute</strong> (2008) - Production Management</p>
+        </div>
+        <div class="section certifications">
+          <h2>Certifications</h2>
+          <ul>
+             <li><a href="https://drive.google.com/file/d/1CT1aO7aYy25f7Q_c_jYqsvROG5Ca5TT6/view?usp=drive_link" target="_blank">Frontend Advanced (IT Step, 2024)</a></li>
+              <li><a href="https://testprovider.com/ua/search-certificate/tp19345131d" target="_blank">React Developer</a></li>
+              <li><a href="https://testprovider.com/ua/search-certificate/tp48821701" target="_blank">React Essential</a></li>
+              <li><a href="https://testprovider.com/ua/search-certificate/tp14353526" target="_blank">HTML5&CSS3 Advanced</a></li>
+              <li><a href="https://testprovider.com/ua/search-certificate/tp91383298" target="_blank">HTML5&CSS3 Starter</a></li>
+              <li><a href="https://testprovider.com/ua/search-certificate/tp96319269" target="_blank">JavaScript Essential</a></li>
+              <li><a href="https://testprovider.com/ua/search-certificate/tp23014205" target="_blank">JavaScript Starter</a></li>
+              <li><a href="https://testprovider.com/ua/search-certificate/tp68317519" target="_blank">Git Basics</a></li>
+          </ul>
+      </div>
+       <div class="section languages">
+          <h2>Languages</h2>
+          <p>Ukrainian - Native</p>
+          <p>English - Elementary(A++, in the process of studying)</p>
+       </div>
+        </aside>
+        <main class="content">
+          <div class="section summary">
+              <h2>Summary</h2>
+              <p>Junior Front-End Developer with experience in <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>React</strong>, and <strong>Angular</strong>. Skilled in responsive design and UI development. Completed the Frontend Advanced course and worked on pet projects. Experienced in team collaboration, using <strong>Trello</strong> and <strong>Git</strong>.</p>
+              <p>I am particularly proud of creating the UI at my last job, which was accepted by clients with minimal changes, demonstrating my ability to work with complex data while maintaining a clean and functional interface. I am also actively improving my English skills.</p>
+          </div>
+          <div class="section experience">
+              <h2>Commerce Experience</h2>
+              <p><strong>Paid Internship (Nov 2024 – Present)</strong></p>
+              <p>Currently, I am working in a team on an administrative-user application for timing and payroll calculation for employees. My responsibilities include:</p>
+              <ul>
+                <li>constant work with <strong>Trello</strong> and <strong>Git</strong></li>
+                <li>maintaining the desktop version built on <strong>React Admin (TS)</strong></li>
+                <li>interface adjustments according to the client's requirements</li>
+                <li>adding extra functionality (not out of the box)</li>
+                <li>customizing library components</li>
+               </ul>
+                <p> I am particularly proud of the independent development of the usability   interface for payroll data. I had specific data that needed to be on the page, and  the design had to align with the overall style. </p>
+                <p> The new page differed in architecture from similar pre-built pages of the project, but the interface I proposed was accepted by the clients almost without changes. Here, I added a filtering menu with conditional rendering, <strong>Material UI</strong> components (accordions and tables), and typed the new objects.</p>          
+          </div>
+          <div class="section projects">
+              <h2>Pet-Projects</h2>
+              <div class="projects-container">
+                  <div class="project"><a href="https://helga22-777.github.io/helga-front/visit_page/"><strong>Visit page</strong></a><p>Technologies: HTML, CSS, JavaScript</p></div>
+                  <div class="project"><a href="https://helga22-777.github.io/bookShelf-Angular"><strong>BooksShelf (Angular)</strong></a><p>Technologies: Angular, RxJs,Material UI, SCSS, Local Storage, Routing Module</p></div>
+                  <div class="project"><a href="https://books-shelf-react.vercel.app/"><strong>BooksShelf (React)</strong></a><p>Technologies: React, React Router, Redux Toolkit, Redux Persist, Lottie</p></div>
+                  <div class="project"><a href="https://helga22-777.github.io/tic-tac-toe.github.io/"><strong>Tic-Tac-Toe (JS)</strong></a><p>Technologies: JavaScript, HTML, CSS</p></div>
+                  <div class="project"><a href="https://helga22-777.github.io/battleshipJS.github.io/"><strong>BattleShips (JS)</strong></a><p>Technologies: JavaScript, HTML, CSS</p></div>
+              </div>
+          </div>
+        </main>
+    </div>
+</body>
+</html>
