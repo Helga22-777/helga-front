@@ -1,0 +1,11 @@
+root = true
+
+[*]
+indent_style = tab
+
+[{package.json,package-lock.json}]
+indent_style = space
+indent_size = 2
+
+[*{.md,.mdx}]
+trim_trailing_whitespace = false
