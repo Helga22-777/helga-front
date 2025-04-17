@@ -38,7 +38,17 @@ app.get('/files', (req, res) => {
 				.status(500)
 				.json({ error: 'Failed to read file directory' });
 		}
-		res.json(files);
+
+		const fileList = files.map((file) => {
+			const filePath = path.join(UPLOAD_DIR, file);
+			const stats = fs.statSync(filePath);
+			return {
+				file,
+				size: stats.size,
+			};
+		});
+
+		res.json(fileList);
 	});
 });
 
