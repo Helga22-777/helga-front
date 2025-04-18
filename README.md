@@ -98,6 +98,44 @@ The upload functionality allows users to send files to a server or destination t
 
 ---
 
+## 📚 Useful MDN References
+
+### 📦 File Handling & Forms
+
+- [FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData) — Constructing and sending key/value pairs to the server.
+- [HTMLInputElement.files](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/files) — Getting selected files from `<input type="file">`.
+
+### 🌐 Network & Fetching
+
+- [fetch()](https://developer.mozilla.org/en-US/docs/Web/API/fetch) — Modern API for making HTTP requests.
+- [Response.body (ReadableStream)](https://developer.mozilla.org/en-US/docs/Web/API/Response/body) — Accessing response as a stream.
+- [ReadableStreamDefaultReader.read()](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultReader/read) — Reading from a stream.
+- [Headers.get()](https://developer.mozilla.org/en-US/docs/Web/API/Headers/get) — Reading specific headers like `Content-Length`.
+
+### 🧪 XMLHttpRequest
+
+- [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) — Classic API for sending HTTP requests.
+- [XMLHttpRequest.upload](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/upload) — Monitoring upload progress.
+- [ProgressEvent](https://developer.mozilla.org/en-US/docs/Web/API/ProgressEvent) — Accessing `loaded` and `total` for progress bars.
+
+### 📂 DOM Manipulation
+
+- [Document.createDocumentFragment()](https://developer.mozilla.org/en-US/docs/Web/API/Document/createDocumentFragment) — Efficient DOM updates.
+- [Element.replaceChildren()](https://developer.mozilla.org/en-US/docs/Web/API/Element/replaceChildren) — Replacing element contents.
+- [HTMLElement.hidden](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/hidden) — Toggling visibility.
+- [HTMLAnchorElement.download](https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement/download) — Triggering file download from blob.
+- [URL.createObjectURL()](https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL) — Creating object URLs for Blob data.
+
+### 🎯 Events & Event Handling
+
+- [EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) — Attaching event listeners.
+- [Event.preventDefault()](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) — Preventing default link behavior.
+- [Event.target](https://developer.mozilla.org/en-US/docs/Web/API/Event/target) — Getting the target of the event.
+
+### 🧱 Other APIs
+
+- [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) — Handling binary data like file chunks.
+- [HTMLProgressElement.value](https://developer.mozilla.org/en-US/docs/Web/API/HTMLProgressElement/value) — Updating progress bar value.
 
 
 
