@@ -12,7 +12,7 @@ class TodoList extends React.Component {
         }
         this.handleAdd = this.handleAdd.bind(this);
         this.handleDelete = this.handleDelete.bind(this);
-        this.compliteTodo =this.compliteTodo.bind(this);
+        this.completeTodo =this.completeTodo.bind(this);
     }
     handleAdd(todo) {
         this.setState({
@@ -24,7 +24,7 @@ class TodoList extends React.Component {
             list: this.state.list.filter(item => item.id !== id),
         })
     }
-    compliteTodo(id) {
+    completeTodo(id) {
         this.setState({
             list: this.state.list.map(item => {
                 if(item.id === id) {
@@ -37,11 +37,11 @@ class TodoList extends React.Component {
     }
     render() {
         return (
-            <div className="wraper">
+            <div className="wrapper">
                 <h1>Todo List</h1>
                 <Header todosCount={this.state.list.length} />
                 <Form handleAdd={this.handleAdd} />
-                <List list={this.state.list} onDelete={this.handleDelete} onClick={this.compliteTodo} />
+                <List list={this.state.list} onDelete={this.handleDelete} onClick={this.completeTodo} />
             </div>
         )
     }

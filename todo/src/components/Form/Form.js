@@ -2,7 +2,7 @@ import React from "react";
 import { v4 } from "uuid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquarePlus } from "@fortawesome/free-solid-svg-icons";
-import styles from "./../List/list.css";
+import styles from "../List/list.css";
 
 class Form extends React.Component {
     state = {
