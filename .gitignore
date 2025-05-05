@@ -1,0 +1,13 @@
+/coverage
+/dist
+/node_modules
+.DS_Store
+.cache
+.idea
+.pnpm-store
+.pnp.js
+.pnp
+.refs
+.tmp
+*.drawio.*.bkp
+*.pem
