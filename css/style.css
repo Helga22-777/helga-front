@@ -5,8 +5,8 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  background-color:  var(--color-body-background);
-  color: var(--color-white);
+  background-color:  var(--color-background);
+  color: var(--color-text-primary);
 }
 @media (max-width: 767.98px) {
   body {
@@ -80,10 +80,10 @@ body {
 .menu__item {
 }
 .menu__item:hover, .header__link-logo:hover {
-  color: rgb(151, 65, 232);
+  color: var(--color-accent);
 }
 .menu__link {
-  color: var(--color-white);
+  color: var(--color-text-primary);
 	font-size: 1rem;
 	font-weight: 500;
 	line-height: 1.5;
@@ -91,7 +91,7 @@ body {
 	transition: color 0.3s;
 }
 .menu__link:hover {
-	color: #aa51fe;
+	color: var(--color-light-accent);
 }
 .header__actions {
   display: flex;
@@ -134,7 +134,7 @@ body {
    block-size: 100%;
    transition: inset-inline-start 0.3s;
    overflow: auto;
-   background-color: #0f172a;
+   background-color: var(--color-background);
    padding-block-start: 105px;
    padding-inline: 15px;
    padding-block-end: 30px;
@@ -194,7 +194,7 @@ body {
      content: "";
      position: absolute;
      block-size: 4px;
-     background-color: var(--color-white);
+     background-color: var(--color-text-primary);
      border-radius: 25px;
   }
   .icon-menu span {
@@ -256,6 +256,7 @@ body {
   transform: translate(0px, 50%);
   transition: all 0.1s;
 }
+
 .companies__title:not(:last-child) {
   margin-block-end: 5rem;
 }
@@ -269,6 +270,7 @@ body {
   opacity: 0;
   transform: scale(0);
   transition: all 0.1s;
+  max-width: 140px;
 }
 .--animate .companies__title {
   transition: all 0.6s;
@@ -315,9 +317,9 @@ body {
 .hero__block-header {
   padding-block-end: 80px;
 }
-.hero__image {
+.hero__image, .speed__image, .powerful__image, .customers__image, .discover__image {
   max-width: 100%;
-  border-radius: 20px;
+  border-radius: 5px;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07),
               0px 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
@@ -377,8 +379,9 @@ body {
 .speed__media {
 }
 /*testimonials*/
+
 .testimonials {
-  background-color: #581C87;
+  background-color: var(--color-light-accent);
 }
 .testimonials__container {
   display: grid;
@@ -392,7 +395,7 @@ body {
 }
 .testimonials__image {
   max-width: 100%;
-  border-radius: 1.5rem;
+  border-radius: 5px;
   overflow: hidden;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07),
   0px 25px 50px -12px rgba(0, 0, 0, 0.25);
@@ -463,8 +466,8 @@ body {
   top: 1rem;
   left: 1rem;
   border-radius: 4px;
-  background-color: #F3E8FF;
-  color: #6B21A8;
+  background-color: var(--color-white);
+  color:  var(--color-accent);
   line-height: 1.4;
   font-size: 14px;
   padding: 0.25rem 0.5rem;
@@ -515,7 +518,7 @@ body {
   transition: color 0.3s;
 }
 .body-item-event__title:hover {
-  color: #6B21A8;
+  color: var(--color-primary);
 }
 .body-item-event__title:not(:last-child) {
   margin-block-end: 1.5rem;
@@ -588,6 +591,9 @@ body {
   .companies__items {
     gap: 1.5rem;
   }
+  .companies__item {
+    color: var(--color-text-primary);
+  }
   .discover__container, .powerful__container, .customers__container, .speed__container {
     grid-template-columns: auto;
     justify-items: center;
@@ -612,7 +618,8 @@ body {
 }
 /*footer*/
 .footer {
-  border-top: 1px solid rgb(203, 213, 225);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-primary);
 }
 .footer__container {
 }
@@ -625,12 +632,12 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 1.9rem;
-  border-bottom: 1px solid rgb(203, 213, 225);
+  border-bottom: 1px solid var(--color-border);
   padding-block: 3rem;
 }
 .footer__logo {
   flex-basis: 210px;
-  color: var(--color-body-background);
+  color: var(--color-text-primary);
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.1;
@@ -641,7 +648,7 @@ body {
   flex-basis: 210px;
 }
 .nav-footer__title {
-  color: rgb(148, 163, 184);
+  color: var(--color-text-primary);
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.1;

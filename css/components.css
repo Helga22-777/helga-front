@@ -9,7 +9,7 @@
   line-height: 24px;
   letter-spacing: 0.5px; 
   background-color:var(--color-primary);
-  border: 2px solid var(--color-primary);
+  /* border: 2px solid var(--color-primary); */
   padding-inline: 40px;
   padding-block: 16px;
   transition: all 0.3s;
@@ -24,18 +24,18 @@
   border: none;
 }
 .button--border {
-  border: 2px solid rgb(255, 255, 255);
+  /* border: 2px solid var(--color-white); */
   background-color: transparent;
 }
 .button:hover {
-  background-color: var(--color-primary-hover);
+  background-color: var(--color-accent);
 }
 .button--border:hover {
  border: none
 }
 .button--transparent:hover{
-  border: 2px solid var(--color-primary);
-  background-color: var(--color-primary);
+  /* border: 2px solid var(--color-primary); */
+  background-color: var(--color-success);
 }
 /* ----- */
 .label {
@@ -54,7 +54,7 @@ text-transform: uppercase;
   line-height: 1.1;
 }
 .link-event {
-  background: url('../img/arrow-right-purple.svg') right no-repeat;
+  background: url('../img/arrow-nude.svg') right no-repeat;
   padding-inline-end: 2.2rem;
   color: var(--color-accent);
 }
@@ -127,7 +127,7 @@ text-transform: uppercase;
   z-index: -1;
   top: 5px;
   left: -8px;
-  background-color:var(--color-decor-pink);
+  background-color:var(--color-success);
 }
 .block-header-border::before {
   content: "";
@@ -136,7 +136,7 @@ text-transform: uppercase;
   position: absolute;
   top: 0;
   left: -10px;
-  border: 5px solid var(--color-decor-orange); 
+  border: 5px solid var(--color-accent); 
 }
 .block-header__line-top::before {
   top: 17px;
@@ -166,7 +166,7 @@ text-transform: uppercase;
 .block__header-link {
   justify-self: start;
   padding-inline-end: 46px;
- background: url("../img/arrow-right.svg") right no-repeat;
+  background: url("../img/arrow-black.svg") right no-repeat;
 }
 /*hover underline*/
 .block__header-link span {
@@ -182,7 +182,7 @@ text-transform: uppercase;
   transition: width 0.5s;
   left: 0;
   bottom: 0;
-  background-color: var(--color-accent);
+  background-color: var(--color-success);
 }
 .block__header-link:hover span::after {
   width: 100%;
@@ -199,7 +199,7 @@ text-transform: uppercase;
   }
   .block-header-border::before {
     left: -9px;
-    border: 3px solid var(--color-decor-orange); 
+    border: 3px solid var(--color-light-accent-orange); 
   }
   .block-header-rectangle::before {
     width: 3rem;
@@ -221,7 +221,7 @@ text-transform: uppercase;
   }
   .block-header-border::before {
     left: -7px;
-    border: 2px solid var(--color-decor-orange);
+    border: 2px solid var(--color-light-accent-orange);
   }
 }
 @media (max-width: 433.98px) {
