@@ -57,9 +57,7 @@ iconMenuOpen.addEventListener('click', (e) => {
 
 
 window.addEventListener('resize', (e) => {
-  const screenSize = window.innerWidth
-   console.log(screenSize);
-   
+  const screenSize = window.innerWidth;   
   if(screenSize > 772) {
     nav.classList.remove('active-side');
     iconMenu.style.display = 'none';

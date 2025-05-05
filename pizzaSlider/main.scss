@@ -1,0 +1,32 @@
+$colorSil: #b1a7a6;
+$colorW: white;
+
+@import "home";
+@import "services";
+@import "blog";
+@import "about";
+@import "contact";
+@import "menu";
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; 
+  }
+  
+
+ul {
+    list-style: none;
+}
+
+
+
+
+
+

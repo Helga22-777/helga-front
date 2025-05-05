@@ -1,0 +1,71 @@
+body {
+  display: block;
+  background-color: #221e1e;
+  color: white;
+  font-family: 'Dancing Script';
+  font-weight: 700;
+}
+h1 {
+  font-size: 28px;
+  text-shadow: 5px 5px 5px #440101;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#ttt {
+  width: 390px;
+  height: 390px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#ttt > div {
+  display: flex;
+  justify-content: center;
+  width: 130px;
+  height: 130px;
+  background-color: #414040;
+  color: white;
+  font-size: 80px;
+  align-items: center;
+  margin: auto 0;
+  cursor: pointer;
+}
+#ttt > div:nth-child(2n) {
+  background-color: #221e1e;
+}
+#ttt > div:hover {
+  filter: brightness(1.2);
+}
+.active, dialog > p {
+  display: block;
+  background-color:  #221e1e;
+  color: white;
+  border-radius: 5px;
+  padding: 35px;
+  font-size: 22px;
+  font-family: 'Dancing Script';
+  font-weight: bold;
+}
+#reload {
+  margin-top: 20px;
+  padding: 10px;
+  background-color:  #440101;
+  border: 2px solid #440101;
+  font-size: 20px;
+  font-family: inherit;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px white;
+  color: white;
+}
+#reload:hover {
+  opacity: .8;
+  filter: brightness(1.1);
+  box-shadow: 3px 3px 3px white;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+}
+
+

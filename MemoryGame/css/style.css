@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  background-color: rgb(22, 67, 215);
+  flex-direction: column;
+  align-items: center;
+}
+
+.memory__game {
+  width: 550px;
+  height: 550px;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  perspective: 1000;
+}
+
+.memory__card {
+  position: relative;
+  width: calc(25% - 10px);
+  height: calc(33.3% - 10px);
+  margin: 5px;
+  transform: scale(1);
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.memory__card.flip {
+  transform: rotateY(180deg);
+}
+
+/* .memory__card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+} */
+
+.front-face, .back-face {
+ width: 100%;
+ height: 100%;
+ padding: 20px;
+ position: absolute;
+ background-color: rgb(64, 64, 245);
+ border-radius: 20px;
+ backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+.btns {
+ margin: 20px 0;
+}
+
+.new__game {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(253, 135, 38);
+  color: rgb(64, 64, 245);
+  font-weight: bold;
+}
+
+.new__game:hover {
+  background-color: rgb(250, 150, 69);
+  color: rgb(22, 67, 215);
+  transition: 500ms;  
+  transform: rotateZ(20deg);
+  transform: rotateY(20deg);
+}

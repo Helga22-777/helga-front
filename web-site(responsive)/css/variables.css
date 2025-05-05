@@ -1,0 +1,27 @@
+:root1 {
+  --color-primary: rgb(114, 28, 194); /* для кнопок */
+  --color-primary-hover: #4c0a8a;
+  --color-accent: #9333EA; /* текстові акценти */
+  --color-light-accent: #C084FC; /* світліша версія акценту */
+  --color-border-purple: #C084FC; /* для підкреслень */
+  --color-decor-pink: rgb(190, 24, 93); /* прямокутник */
+  --color-decor-orange: rgb(194, 65, 12); /* бордер */
+  --color-black: black;
+  --color-white: white;
+  --color-background: #192131;
+  --color-body-background: rgb(15, 23, 42);
+}
+
+:root {
+  --color-text-primary: #1F2933;
+  --color-primary: #FFD166; /* для кнопок */
+  --color-primary-hover: #ffe186;
+  --color-accent: #D58D8D; /* текстові акценти */
+  --color-light-accent: #E2B6A1; /* світліша версія акценту */
+  --color-black: black;
+  --color-white: white;
+
+  --color-background: #F7F7F7;
+  --color-border: #E5E7EB; /*Лінії, межі*/
+  --color-success: #6BAF92;
+}
