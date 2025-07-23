@@ -1,8 +1,0 @@
-{
-  "name": "client",
-  "private": true,
-  "type": "module",
-  "devDependencies": {
-    "prettier": "^3.5.3"
-  }
-}
